@@ -4958,29 +4958,13 @@ array:
 
 [source, nim]
 ----
-proc main =
-  var a: array[4, uint64]
-  echo sizeof(a)
-  a[0] = 7
-  echo a[0]
-  echo cast[int](addr a)
-  echo cast[int](addr a[0])
-
-  var a2 = a
-  a[0] = 3
-  echo a2[0]
-
-main()
+include::examples/ArrayAndSequences03.nim[]
 ----
 
 When we run this program, we get this output:
 
 ----
-32
-7
-140734216410384
-140734216410384
-7
+include::examples/ArrayAndSequences03.result[]
 ----
 
 The size of the whole array is 32, as we have 4 elements, each 8 byte in size. And the
