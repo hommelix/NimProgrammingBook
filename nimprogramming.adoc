@@ -1215,7 +1215,7 @@ playground and run it now if you want. The program is built using some elementar
 instructions, for which we will give only a very short description here. Everything is
 explained in much more detail in the next part of this book.
 
-[source,nim]
+[source, nim]
 ----
 var sum: int
 var i: int
@@ -2142,7 +2142,7 @@ notation would not work well for var/let/const distinction and for type declarat
 With what we have learned in this section, we can rewrite our initial Nim example from
 part I in this form:
 
-[source,nim]
+[source, nim]
 ----
 const
   Max = 100
@@ -2193,7 +2193,7 @@ a text string that the user has typed in the terminal window.
 We use a function with the name
 [.func]#readLine()# for this task.
 
-[source,nim]
+[source, nim]
 ----
 echo "Please enter some text"
 var mytext = readLine(stdin)
@@ -2245,7 +2245,7 @@ to have the ability to read single character input without the need to press add
 For that, we can use the getch() function from the [.mod]#terminal# module -- that functions waits (blocks) until
 a key is pressed and returns the ASCII character of the pressed key:
 
-[source,nim]
+[source, nim]
 ----
 from terminal import getch
 
@@ -2412,7 +2412,7 @@ the literal with [.lit]#i8#, [.lit]#i16#, [.lit]#i32# or [.lit]#i64# for signed 
 unsigned types. We can separate the actual number and the suffix with a [.lit]#'# character,
 but that is not necessary for the integer literals.
 
-[source,nim]
+[source, nim]
 ----
 var
   a = 100 # int literal in decimal notation
